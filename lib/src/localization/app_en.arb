@@ -1,0 +1,6 @@
+{
+  "appTitle": "pioneer_vsx_remote_control",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}

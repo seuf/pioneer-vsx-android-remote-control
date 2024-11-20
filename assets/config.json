@@ -1,0 +1,87 @@
+{
+    "ip": "192.168.1.23",
+    "endpoint": "/EventHandler.asp?WebToHostItem=",
+    "buttons": [
+      {
+        "name": "Power",
+        "endpoint": "PZ",
+        "icon": "power_settings_new"
+      },
+      {
+        "name": "Back",
+        "endpoint": "31NW",
+        "icon": "undo"
+      },
+      {
+        "name": "Volume +",
+        "endpoint": "VU",
+        "icon": "volume_up"
+      },
+      {
+        "name": "Volume -",
+        "endpoint": "VD",
+        "icon": "volume_down"
+      
+      },
+      {
+        "name": "Mute",
+        "endpoint": "MZ",
+        "icon": "volume_off"
+      },
+      {
+        "name": "Source CD",
+        "endpoint": "01FN",
+        "icon": "album"
+      },
+      {
+        "name": "Source Radio",
+        "endpoint": "26FN",
+        "icon": "radio"
+      },
+      {
+        "name": "Source BT",
+        "endpoint": "33FN",
+        "icon": "bluetooth"
+      },
+      {
+        "name": "Source HDMI",
+        "endpoint": "31FN",
+        "icon": "settings_input_hdmi"
+      },
+      {
+        "name": "Source BD",
+        "endpoint": "25FN",
+        "icon": "tv"
+      },
+      {
+        "name": "Nav Up",
+        "endpoint": "26NW",
+        "icon": "keyboard_arrow_up"
+      },
+      {
+        "name": "Nav Down",
+        "endpoint": "27NW",
+        "icon": "keyboard_arrow_down"
+      },
+      {
+        "name": "Nav Left",
+        "endpoint": "29NW",
+        "icon": "keyboard_arrow_left"
+      },
+      {
+        "name": "Nav Right",
+        "endpoint": "28NW",
+        "icon": "keyboard_arrow_right"
+      },
+      {
+        "name": "Enter",
+        "endpoint": "30NW",
+        "icon": "adjust"
+      },
+      {
+        "name": "Mode Auto",
+        "endpoint": "0005SR",
+        "icon": "spatial_audio"
+      }
+    ]
+  }

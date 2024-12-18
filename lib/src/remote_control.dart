@@ -32,9 +32,9 @@ class RemoteControlState extends State<RemoteControl> {
 
   Future<void> _loadPreferences() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    print('ip_address : ${prefs.getString('ip_address')}');
+    // print('ip_address : ${prefs.getString('ip_address')}');
     for (var button in buttons) {
-      print('button ${button['name']} : ${button['endpoint']}');
+      // print('button ${button['name']} : ${button['endpoint']}');
       button['url'] = 'http://${prefs.getString('ip_address') ?? '192.168.1.23'}/EventHandler.asp?WebToHostItem=${button['endpoint']}';
     }
     setState(() {
@@ -101,6 +101,13 @@ class RemoteControlState extends State<RemoteControl> {
                       buildButton(buttons, 'Volume -'),
                       const SizedBox(width: 20),
                       buildButton(buttons, 'Volume +'),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      buildButton(buttons, 'Mode Auto'),
                       const SizedBox(width: 20),
                       buildButton(buttons, 'Mute'),
                     ],
@@ -201,9 +208,9 @@ class RemoteControlState extends State<RemoteControl> {
         fixedSize: WidgetStateProperty.all(const Size.fromWidth(60)),
 
         backgroundColor: WidgetStateProperty.all<Color>(const Color(0xFFFCFCFD)),
-        foregroundColor: WidgetStateProperty.all<Color>(const Color(0xFF36395A)),
+        foregroundColor: WidgetStateProperty.all<Color>(const Color.fromARGB(255, 23, 31, 124)),
         shadowColor: WidgetStateProperty.all<Color>(
-            const Color(0xFF2D2342).withOpacity(0.4)),
+            const Color.fromARGB(255, 49, 9, 134)),
         elevation: WidgetStateProperty.all<double>(4.0),
         shape: WidgetStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
@@ -216,7 +223,7 @@ class RemoteControlState extends State<RemoteControl> {
           const TextStyle(
               fontFamily: 'JetBrains Mono',
               fontSize: 18,
-              color: Color(0xFF36395A),
+              color: Color.fromARGB(255, 59, 9, 116),
               height: 1),
         ),
         overlayColor: WidgetStateProperty.resolveWith<Color>(

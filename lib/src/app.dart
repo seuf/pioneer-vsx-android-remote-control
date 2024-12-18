@@ -7,7 +7,6 @@ import 'sample_feature/sample_item_list_view.dart';
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
 import 'remote_control.dart';
-import 'settings/settings_page.dart';
 
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {

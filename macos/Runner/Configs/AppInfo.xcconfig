@@ -8,7 +8,7 @@
 PRODUCT_NAME = pioneer_vsx_remote_control
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.pioneerVsxRemoteControl
+PRODUCT_BUNDLE_IDENTIFIER = fr.aperogeek.pioneerVsxRemoteControl
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2024 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2024 fr.aperogeek. All rights reserved.
